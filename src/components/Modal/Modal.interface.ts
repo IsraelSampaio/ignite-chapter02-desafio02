@@ -3,5 +3,5 @@ export type ModalProps = {
   setIsOpen(
     event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>
   ): void;
-  children: React.ReactNode;
+  children: React.ReactNode | React.ReactNode[];
 };
