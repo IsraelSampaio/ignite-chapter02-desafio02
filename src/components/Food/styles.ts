@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import {ContainerProps} from './Food.interface'
+import { ContainerProps } from "./Food.interface";
 
 export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
@@ -14,9 +14,9 @@ export const Container = styled.div<ContainerProps>`
     transition: 0.3s opacity;
     text-align: center;
 
-    ${props =>
-    !props.available &&
-    css`
+    ${(props) =>
+      !props.available &&
+      css`
         opacity: 0.3;
       `};
 
@@ -116,7 +116,7 @@ export const Container = styled.div<ContainerProps>`
 
           &:before {
             position: absolute;
-            content: '';
+            content: "";
             height: 20px;
             width: 40px;
             left: 8px;
